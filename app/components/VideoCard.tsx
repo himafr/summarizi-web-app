@@ -117,7 +117,7 @@ export default function VideoCard({ video, isVisible }: VideoCardProps) {
         </video>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
 
         {/* Play/Pause Indicator */}
         {!isPlaying && (
@@ -130,7 +130,7 @@ export default function VideoCard({ video, isVisible }: VideoCardProps) {
         <div className="absolute bottom-0 left-0 right-0 p-4 text-white z-10">
           {/* Author Info */}
           <div className="flex items-center gap-3 mb-4">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 border-2 border-white">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white">
               <Image
                 src={video.author.avatar}
                 alt={video.author.name}

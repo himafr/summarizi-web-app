@@ -1,8 +1,9 @@
+import VideoFeed from "@/app/components/VideoFeed";
 
 export default function Home() {
   return (
     <main className="w-full h-screen bg-black overflow-hidden">
-      nothing to view
+      <VideoFeed />
     </main>
   );
 }
